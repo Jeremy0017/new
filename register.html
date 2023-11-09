@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!--<script>
+        function validateForm() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            var confirmPassword = document.getElementById('confirmPassword').value;
+            var email = document.getElementById('email').value;
+ 
+            // Simple check for empty fields
+            if (!username || !password || !confirmPassword || !email) {
+                alert('Please fill in all fields.');
+                return false;
+            }
+ 
+            // Check if password and confirm password match
+            if (password !== confirmPassword) {
+                alert('Passwords do not match.');
+                return false;
+            }
+ 
+            return true;
+        }
+    </script>
+-->
+
+</head>
+<body>
+
+<header class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <p class="navbar-brand";> MiniBlog </p>
+        <div class="ml-auto">
+            <a href="index.html" class="btn btn-outline-primary">Login</a>
+            
+        </div>
+    </div>
+</header>
+<h1 class="text-center mb-4">Registration</h1>
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">See the Registration Rules</h5>
+
+            <form>  <!--action="register.php" method="post" onsubmit="return validateForm()"-->
+                <div class="mb-3">
+                   
+                    <input type="username" class="form-control" id="username" placeholder="Enter Username" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="email" placeholder="Enter Email" required>
+                </div>
+                <div class="mb-3">
+                    
+                    <input type="password" class="form-control" placeholder="Enter Password" id="password" required>
+                </div>
+                <div class="mb-3">
+                    <div class="mb-3">
+                        <input type="password" class="form-control" placeholder="Confirm Password" id="password" required>
+                    </div>
+                    
+                    <a href="home.html" type="submit" class="btn btn-info" >REGISTER
+                    </a>
+                </div>
+                <p style="font-size: small;";> Return to the <a href="index.html">LOGIN PAGE</a></p>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS (optional, if you need components that rely on JavaScript) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
